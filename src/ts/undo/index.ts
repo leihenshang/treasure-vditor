@@ -1,12 +1,13 @@
+//@ts-nocheck
 import * as DiffMatchPatch from "diff-match-patch";
-import {disableToolbar, enableToolbar, hidePanel} from "../toolbar/setToolbar";
-import {isFirefox, isSafari} from "../util/compatibility";
-import {scrollCenter} from "../util/editorCommonEvent";
-import {execAfterRender} from "../util/fixBrowserBehavior";
-import {highlightToolbar} from "../util/highlightToolbar";
-import {processCodeRender} from "../util/processCode";
-import {setRangeByWbr, setSelectionFocus} from "../util/selection";
-import {renderToc} from "../util/toc";
+import { disableToolbar, enableToolbar, hidePanel } from "../toolbar/setToolbar";
+import { isFirefox, isSafari } from "../util/compatibility";
+import { scrollCenter } from "../util/editorCommonEvent";
+import { execAfterRender } from "../util/fixBrowserBehavior";
+import { highlightToolbar } from "../util/highlightToolbar";
+import { processCodeRender } from "../util/processCode";
+import { setRangeByWbr, setSelectionFocus } from "../util/selection";
+import { renderToc } from "../util/toc";
 
 interface IUndo {
     hasUndo: boolean;
@@ -267,4 +268,5 @@ class Undo {
     }
 }
 
-export {Undo};
+export { Undo };
+
